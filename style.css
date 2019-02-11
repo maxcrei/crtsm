@@ -7,6 +7,7 @@
 
 :root{
   font-size: 0;
+  color: pink;
 }
 
 input, select, span{
@@ -62,13 +63,13 @@ header{
 
 @media (max-width: 480px) {
   body{
-    background: black;
+    color: black;
   }
 }
 
 @media (max-width: 767px) {
   body{
-    background: gray;
+    color: gray;
   }
 }
 
