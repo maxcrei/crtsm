@@ -7,22 +7,21 @@
 
 :root{
   font-size: 0;
-  color: pink;
 }
 
 input, select, span{
   font-size: 16px;
 }
 
-input[type="submit"], input[type="button"], select{
+input[type="submit"], select{
   box-sizing: border-box;
   height: 30px;
   padding: 5px 3px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 header{
-  background-image: url("media/image/header-background.jpg");
+  background-image: url("media/image/header-background-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -31,8 +30,8 @@ header{
 }
 
   .top-header{
-    background: #2a8fe2;
-    border-radius: 0 0 7px 7px;
+    background: #0466f8;
+    border-radius: 0 0 8px 8px;
   }
 
     .top-header>form{
@@ -43,17 +42,42 @@ header{
 
       .top-header>form>select{
         width: calc(65% - 5px);
-        font-size: 14px;
+        font-size: 13px;
+        color: #0466f8;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
       }
 
       .top-header>form>input[type="submit"]{
         width: 35%;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: bold;
         background: #0028ed;
         color: white;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+    .top-header>nav{
+      border-radius: 8px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-header>nav>div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 45px;
+      padding: 0 20px;
+    }
+
+    .top-header>nav>div:first-child{
+      border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    }
+
+      .nav-element{
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
       }
 
 #maket {
@@ -61,16 +85,12 @@ header{
   height: auto;
 }
 
-@media (max-width: 480px) {
-  body{
-    color: black;
-  }
+@media (min-width: 479px) {
+
 }
 
-@media (max-width: 767px) {
-  body{
-    color: gray;
-  }
+@media (min-width: 766px) {
+
 }
 
 
