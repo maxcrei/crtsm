@@ -7,17 +7,21 @@
 
 :root{
   font-size: 0;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-input, select, span{
-  font-size: 16px;
-}
-
-input[type="submit"], select{
+.common-interactive{
   box-sizing: border-box;
   height: 30px;
   padding: 5px 3px;
   border-radius: 5px;
+}
+
+.contact-number{
+  font-size: 18px;
+  display: none;
+  white-space: nowrap;
+  color: white;
 }
 
 header{
@@ -26,7 +30,6 @@ header{
   background-position: center center;
   background-size: cover;
   padding: 0 20px 30px;
-
 }
 
   .top-header{
@@ -42,16 +45,17 @@ header{
 
       .top-header>form>select{
         width: calc(65% - 5px);
-        font-size: 13px;
+        font-size: 14px;
         color: #0466f8;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        background: white;
       }
 
       .top-header>form>input[type="submit"]{
-        width: 35%;
+        width: 120px;
         font-size: 13px;
         font-weight: bold;
-        background: #0028ed;
+        background: linear-gradient(to bottom, #0466f8, #0028ed) ;
         color: white;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
       }
@@ -67,7 +71,7 @@ header{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 45px;
+      height: 50px;
       padding: 0 20px;
     }
 
@@ -86,6 +90,14 @@ header{
 }
 
 @media (min-width: 479px) {
+
+.contact-number{
+  display: inline-block;
+}
+
+header{
+  padding: 0 0 30px;
+}
 
 }
 
