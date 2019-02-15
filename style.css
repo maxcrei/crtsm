@@ -6,7 +6,6 @@
 }
 
 :root{
-  font-size: 0;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -18,8 +17,7 @@
 }
 
 .contact-number{
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Lato', sans-serif;
   display: none;
   white-space: nowrap;
   color: white;
@@ -42,6 +40,7 @@ header{
       padding: 5px;
       display: flex;
       justify-content: space-between;
+      align-content: center;
       --submit-width: 130px;
     }
 
@@ -63,7 +62,7 @@ header{
       }
 
       .top-header>form>.contact-number{
-        padding-right: 7px;
+        padding-right: 1%;
       }
 
     .top-header>nav{
@@ -97,21 +96,21 @@ header{
 
 
 
-@media (min-width: 479px) {
+@media (min-width: 560px){
 
   .contact-number{
     display: inline-block;
   }
 
   header{
-   padding: 0 0 30px;
-  }
+    padding: 0 0 30px;
+   }
 
   .top-header>form>select{
-   width: calc(100% - var(--submit-width) - 24px - 140px);
+    width: calc(100% - var(--submit-width) - 2% - 200px);
   }
+  
 }
-
 
 
 
