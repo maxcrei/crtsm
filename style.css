@@ -10,7 +10,7 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-.common-interactive{
+.common-interactive-box{
   box-sizing: border-box;
   height: 30px;
   padding: 5px 3px;
@@ -19,6 +19,7 @@
 
 .contact-number{
   font-size: 18px;
+  font-family: "Open Sans", sans-serif;
   display: none;
   white-space: nowrap;
   color: white;
@@ -41,23 +42,28 @@ header{
       padding: 5px;
       display: flex;
       justify-content: space-between;
+      --submit-width: 130px;
     }
 
       .top-header>form>select{
-        width: calc(65% - 5px);
-        font-size: 14px;
+        width: calc(100% - var(--submit-width) - 5px);
+        font-size: 13px;
         color: #0466f8;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         background: white;
       }
 
       .top-header>form>input[type="submit"]{
-        width: 120px;
+        width: var(--submit-width);
         font-size: 13px;
         font-weight: bold;
         background: linear-gradient(to bottom, #0466f8, #0028ed) ;
         color: white;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .top-header>form>.contact-number{
+        padding-right: 7px;
       }
 
     .top-header>nav{
@@ -97,6 +103,10 @@ header{
 
 header{
   padding: 0 0 30px;
+}
+
+.top-header>form>select{
+  width: calc(100% - var(--submit-width) - 24px - 140px);
 }
 
 }
