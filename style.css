@@ -95,25 +95,23 @@ header{
   height: auto;
 }
 
+
+
 @media (min-width: 479px) {
 
-.contact-number{
-  display: inline-block;
+  .contact-number{
+    display: inline-block;
+  }
+
+  header{
+   padding: 0 0 30px;
+  }
+
+  .top-header>form>select{
+   width: calc(100% - var(--submit-width) - 24px - 140px);
+  }
 }
 
-header{
-  padding: 0 0 30px;
-}
-
-.top-header>form>select{
-  width: calc(100% - var(--submit-width) - 24px - 140px);
-}
-
-}
-
-@media (min-width: 766px) {
-
-}
 
 
 
