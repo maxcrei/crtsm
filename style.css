@@ -1,3 +1,19 @@
+
+@font-face{
+
+  font-family: 'FF Dax Pro';
+  
+  src: url('vendor/fonts/FFDaxPro-Light.ttf') format('truetype');
+  
+  font-weight: lighter;
+  
+  font-style: normal;
+  
+  }
+
+
+
+
 *{
  margin: 0;
  padding: 0;
@@ -7,6 +23,10 @@
 
 :root{
   color: rgba(0, 0, 0, 0.8);
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
 }
 
 .common-interactive-box{
@@ -34,6 +54,7 @@ header{
   .top-header{
     background: #0466f8;
     border-radius: 0 0 8px 8px;
+    margin-bottom: 5px;
   }
 
     #request-form{
@@ -68,7 +89,7 @@ header{
     .navigation{
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       box-sizing: border-box;
       position: relative;
       padding: 0 19px;
@@ -100,7 +121,30 @@ header{
       .nav-element:nth-child(3n){
         text-align: right;
       }
+  
 
+  .midle-header{
+    font-size: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+  }
+
+    .midle-header-left{
+      padding-left: 5px;
+    }
+
+      .logo-text-1{
+        font-size: 65px;
+      }
+
+      .logo-text-2{
+        font-family: "FF Dax Pro", "Open Sans", sans-serif;
+        font-weight: lighter;
+        font-size: 45px;
+        line-height: 30px;
+        height: 30px;
+      }
 
 
 #maket {
@@ -108,9 +152,11 @@ header{
   height: auto;
 }
 
+
+
 /*  
 
-          Portrait or wider.
+          Portrait and wider.
 
 */
 
@@ -135,7 +181,7 @@ header{
 
 .navigation{
   flex-wrap: nowrap;
-  padding: 0 10px;
+  padding: 0 3%;
 }
 
   .navigation:after{
